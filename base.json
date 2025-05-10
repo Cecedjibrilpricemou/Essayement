@@ -1,0 +1,22 @@
+{
+    "_default": {
+        "1": {
+            "first_name": "Dalton",
+            "last_name": "Lewis",
+            "phone_number": "Amy",
+            "address": "42388 Johnson Fork\nPort Darrenville, MP 26810"
+        },
+        "2": {
+            "first_name": "Moore",
+            "last_name": "Hines",
+            "phone_number": "John",
+            "address": "1494 Nicholas Falls Apt. 631\nBellchester, TN 70413"
+        },
+        "3": {
+            "first_name": "cece djibril ",
+            "last_name": "pricemou",
+            "phone_number": "627082601",
+            "address": "Conakry"
+        }
+    }
+}
