@@ -1,0 +1,158 @@
+
+KESSO TECH@Le-Gourou MINGW64 ~/Essayement (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Annotation 2025-05-10 054127.png
+        bili.png
+        monpseudogithub.png
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+KESSO TECH@Le-Gourou MINGW64 ~/Essayement (main)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Disable this message with "git config advice.addEmptyPathspec false"
+
+KESSO TECH@Le-Gourou MINGW64 ~/Essayement (main)
+$ git add .
+
+KESSO TECH@Le-Gourou MINGW64 ~/Essayement (main)
+$ git commit -m"jai envoyer des choses"
+[main 85adec1] jai envoyer des choses
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Annotation 2025-05-10 054127.png
+ create mode 100644 bili.png
+ create mode 100644 monpseudogithub.png
+
+KESSO TECH@Le-Gourou MINGW64 ~/Essayement (main)
+$ git push origin main
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (8/8), 305.43 KiB | 12.22 MiB/s, done.
+Total 8 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Cecedjibrilpricemou/Essayement.git
+   433afd2..85adec1  main -> main
+
+KESSO TECH@Le-Gourou MINGW64 ~/Essayement (main)
+$ git clone https://gist.github.com/5b9b38ab71264b5a4ea166ba84b6a4fd.git
+Cloning into '5b9b38ab71264b5a4ea166ba84b6a4fd'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+
+KESSO TECH@Le-Gourou MINGW64 ~/Essayement (main)
+$ cd ^C
+
+KESSO TECH@Le-Gourou MINGW64 ~/Essayement (main)
+$ cd 5b9b38ab71264b5a4ea166ba84b6a4fd
+
+KESSO TECH@Le-Gourou MINGW64 ~/Essayement/5b9b38ab71264b5a4ea166ba84b6a4fd (main)
+$ cat index.py
+print("hello word")
+KESSO TECH@Le-Gourou MINGW64 ~/Essayement/5b9b38ab71264b5a4ea166ba84b6a4fd (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+KESSO TECH@Le-Gourou MINGW64 ~/Essayement/5b9b38ab71264b5a4ea166ba84b6a4fd (main)
+$ git add .
+
+KESSO TECH@Le-Gourou MINGW64 ~/Essayement/5b9b38ab71264b5a4ea166ba84b6a4fd (main)
+$ git commit -m"mise a jour"
+[main bf05f11] mise a jour
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+
+KESSO TECH@Le-Gourou MINGW64 ~/Essayement/5b9b38ab71264b5a4ea166ba84b6a4fd (main)
+$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 335 bytes | 167.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://gist.github.com/5b9b38ab71264b5a4ea166ba84b6a4fd.git
+   49bb1e0..bf05f11  main -> main
+
+KESSO TECH@Le-Gourou MINGW64 ~/Essayement/5b9b38ab71264b5a4ea166ba84b6a4fd (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+KESSO TECH@Le-Gourou MINGW64 ~/Essayement/5b9b38ab71264b5a4ea166ba84b6a4fd (main)
+$ cd ..
+
+KESSO TECH@Le-Gourou MINGW64 ~/Essayement (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        5b9b38ab71264b5a4ea166ba84b6a4fd/
+        base.json
+        crm.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+KESSO TECH@Le-Gourou MINGW64 ~/Essayement (main)
+$ git add .
+warning: adding embedded git repository: 5b9b38ab71264b5a4ea166ba84b6a4fd
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> 5b9b38ab71264b5a4ea166ba84b6a4fd
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached 5b9b38ab71264b5a4ea166ba84b6a4fd
+hint:
+hint: See "git help submodule" for more information.
+hint: Disable this message with "git config advice.addEmbeddedRepo false"
+
+KESSO TECH@Le-Gourou MINGW64 ~/Essayement (main)
+$ rm -rf 5b9b38ab71264b5a4ea166ba84b6a4fd
+
+KESSO TECH@Le-Gourou MINGW64 ~/Essayement (main)
+$ git add .
+
+KESSO TECH@Le-Gourou MINGW64 ~/Essayement (main)
+$ git commit -m"mon projet"
+[main 406ec51] mon projet
+ 2 files changed, 122 insertions(+)
+ create mode 100644 base.json
+ create mode 100644 crm.py
+
+KESSO TECH@Le-Gourou MINGW64 ~/Essayement (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1.89 KiB | 646.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Cecedjibrilpricemou/Essayement.git
+   85adec1..406ec51  main -> main
+
+KES
